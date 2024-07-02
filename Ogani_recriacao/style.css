@@ -469,18 +469,75 @@ header {
     font-size: 14px;
 }
 
+.manualCarousel {
+    overflow: auto;
+    white-space: nowrap;
+    
+}
+
 .namedProductBox {
-    background-color:#e2e2e2;
+    background-color:#f5f5f5;
     width: 260px;
     height: 260px;
     display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+}
+.nameProductBox {
+    background-color: #ffffff;
+    width: 200px;
+    height: 4.5vh;
+    margin-bottom: 1vh;
+    position: absolute;
+    align-self: flex-end;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.nameProductBox {
-    background-color: #ffffff;
-    width: 85%;
-    height: 4.5vh;
-    align-self: flex-end;
-    margin-bottom: 1vh;
+#productBoxHolder {
+    width: 1130px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:row nowrap;
+    column-gap: 30px;
+    margin-bottom: 10vh;
+}
+
+#productBoxHolder .namedProductBox{
+    width: 260px;
+    width: 260px;
+}
+
+#featured {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#featuredTitle {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#featuredSelection {
+    margin: auto;
+    display: flex;
+    column-gap: 12px;
+    font-size: 18px;
+}
+
+.greenLine {
+    background-color: #7fad39;
+    width: 50px;
+    height: 1vh;
 }
