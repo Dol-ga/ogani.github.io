@@ -15,6 +15,9 @@ main {
     grid-column: 2;
 }
 
+
+/* HEADER SECTION*/
+
 header {
     grid-template-columns: 1fr 3fr 1fr;
     grid-column-start: 1;
@@ -380,12 +383,6 @@ header {
     transition: 0.5s;
 }
 
-#test {
-    background-color: red;
-    height: 100%;
-    width: 100%;
-}
-
 #languageSelect:hover .dropdownMenu {
     opacity: 1;
     z-index: 5;
@@ -416,6 +413,65 @@ header {
     padding-bottom: 20px;
     transition: 0.5s;
 }
+
+/* FOOTER SECTION */
+
+footer {
+    grid-column: 2;
+    width: 100%;
+    height: 40vh;
+    background-color: #F3F6FA;
+    grid-template-columns: 1fr 3fr 1fr;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 40vh;
+}
+
+#footerHolder {
+    grid-column: 2;
+    display: grid;
+    grid-template-areas: 'contact usefulLinks newsletter'
+    'credit credit credit';
+    grid-template-rows: 3fr 1fr;
+}
+
+
+#footerContact {
+    grid-area: contact;
+}
+
+#footerUsefulLinks{
+    grid-area: usefulLinks;
+}
+
+#footerNewsletter{
+    grid-area: newsletter;
+}
+
+#footerCredit{
+    grid-area: credit;
+    display: flex;
+    justify-content: space-between;
+    color:#6f6f6f;
+    align-items: center;
+}
+
+#footerCredit img {
+    height: 2.4vh;
+}
+
+#footerCredit a {
+    color: #007bff;
+}
+
+#footerCredit a:hover {
+    color: #fff;
+}
+
+
+/* INDEX/GENERAL SECTION*/
+
 
 #initialBanner {
     display: flex;
@@ -526,18 +582,161 @@ header {
 
 #featuredTitle {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
+}
+
+.money {
+    font-weight: 700;
+    font-size: 18px;
 }
 
 #featuredSelection {
     margin: auto;
     display: flex;
-    column-gap: 12px;
+    column-gap: 24px;
     font-size: 18px;
 }
 
 .greenLine {
     background-color: #7fad39;
-    width: 50px;
-    height: 1vh;
+    width: 100px;
+    height: 0.5vh;
+    margin-bottom: 4vh;
 }
+
+#smallgreenLine {
+    background-color: #7fad39;
+    width: 100%;
+    height: 0.3vh;
+    margin-bottom: 4vh;
+}
+
+#featuredGrid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    height: 75vh;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 8vh;
+}
+
+#featuredGrid div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.featuredImage {
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.featuredImage * {
+    width: 100%;
+}
+
+#banners {
+    display: flex;
+    justify-content: space-between;
+    height: 27.3vh;
+    margin-bottom: 8vh;
+}
+
+#banners * {
+    height: 100%;
+}
+
+.latestProductsDisplay {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    width: 30%;
+
+}
+
+.latestProductsDisplay>div {
+    font-weight: 700;
+    font-size: 25px;
+    display: flex;
+    align-content: center;
+}
+
+#latestProductsDisplayTitle  {
+justify-content: space-between;
+}
+
+.latestProductsDisplayOption {
+    display: block;
+}
+
+.latestProductsDisplay>div>div button{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: #e2e2e2 solid 1px;
+}
+
+.latestProductsDisplay>div>div button:hover{
+    border: #e2e2e2 solid 1px;
+    cursor: pointer;
+}
+
+.latestProductsDisplayName {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#latestProductsHolder {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#homeBlogDisplay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#homeBlogDisplay>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogEntry {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10px;
+}
+
+.blogEntry img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.blogEntryInteractions {
+    color: #b2b2b2;
+    justify-content: flex-start;
+}
+
+.blogEntryInteractions span {
+    margin-right: 15px;
+}
+
+.blogEntryInteractions span i {
+    margin-right: 5px;
+}
+
+.blogEntryTitle {
+    font-weight: 700;
+    font-size: 20px;
+}
+
