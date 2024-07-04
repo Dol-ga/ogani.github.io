@@ -740,3 +740,10 @@ justify-content: space-between;
     font-size: 20px;
 }
 
+#footerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+}
+
