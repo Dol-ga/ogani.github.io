@@ -434,6 +434,7 @@ footer {
     grid-template-areas: 'contact usefulLinks newsletter'
     'credit credit credit';
     grid-template-rows: 3fr 1fr;
+    margin-top: 10vh;
 }
 
 
@@ -467,6 +468,14 @@ footer {
 
 #footerCredit a:hover {
     color: #fff;
+}
+
+#footerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+    gap: 4vh;
 }
 
 
@@ -738,12 +747,5 @@ justify-content: space-between;
 .blogEntryTitle {
     font-weight: 700;
     font-size: 20px;
-}
-
-#footerContact {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-content: flex-start;
 }
 
