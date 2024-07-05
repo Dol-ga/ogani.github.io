@@ -454,14 +454,13 @@ footer {
     display: flex;
     justify-content: center;
     color:#6f6f6f;
-    align-items;
+    flex-direction: column;
 }
 
 #footerCredit div {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
 }
 
 #footerLineDiv{
