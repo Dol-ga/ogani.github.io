@@ -445,8 +445,36 @@ footer {
     grid-area: usefulLinks;
 }
 
+#footerUsefulLinks ul{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-flow: column wrap;    
+}
+
+#footerUsefulLinks ul li{
+    width: 50%;
+    text-align: left;
+    vertical-align: center;
+}
+
 #footerNewsletter{
     grid-area: newsletter;
+}
+
+.interactiveSocialMediabutton{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #252525;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.interactiveSocialMediabutton:hover{
+    color: #fff;
+    background-color: #7fad39;
+    transition: 0.3s;
 }
 
 #footerCredit{
