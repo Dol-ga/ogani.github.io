@@ -452,10 +452,22 @@ footer {
 #footerCredit{
     grid-area: credit;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color:#6f6f6f;
+    align-items;
+}
+
+#footerCredit div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
+
+#footerLineDiv{
+    height: 0.1vh;
+    color:#b2b2b2;
+
 
 #footerCredit img {
     height: 2.4vh;
