@@ -432,8 +432,8 @@ footer {
     display: grid;
     grid-template-areas: 'contact usefulLinks newsletter'
     'credit credit credit';
-    grid-template-rows: 4fr 1fr;
-    margin-top: 5vh;
+    grid-template-rows: 4fr 0.8fr;
+    margin-top: 5.5vh;
 }
 
 
