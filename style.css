@@ -425,7 +425,6 @@ footer {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
-    height: 40vh;
 }
 
 #footerHolder {
@@ -474,8 +473,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-content: flex-start;
-    gap: 4vh;
+    align-items: flex-start;
+    gap: vh;
 }
 
 
@@ -729,6 +728,10 @@ justify-content: space-between;
 .blogEntry img {
     width: 100%;
     margin-bottom: 10px;
+}
+
+.blogEntryDescription {
+    color: #6f6f6f;
 }
 
 .blogEntryInteractions {
