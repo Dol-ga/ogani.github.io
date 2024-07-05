@@ -432,7 +432,7 @@ footer {
     display: grid;
     grid-template-areas: 'contact usefulLinks newsletter'
     'credit credit credit';
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 3fr 2.2fr;
     margin-top: 10vh;
 }
 
@@ -464,8 +464,8 @@ footer {
 }
 
 #footerLineDiv{
-    height: 1vh;
-    color:#6f6f6f;
+    height: 0.2vh;
+    background-color:#e2e2e2;
 }
 
 #footerCredit img {
