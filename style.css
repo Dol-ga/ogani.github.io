@@ -466,19 +466,63 @@ footer {
     width: 50%;
     text-align: left;
     vertical-align: center;
+    font-size: 14px;
+    margin-bottom: 1vh;
 }
 
 #footerNewsletter{
     grid-area: newsletter;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2.5fr 4fr
+}
+
+#footerNewsletterText {
+    font-size: 14px;
+}
+
+#newsletterSubscribe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    height: 5.5vh;
+}
+
+#newsletterInput {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    background-color: #fff;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #000;
+}
+
+#newsletterButton {
+    background-color: #7fad39;
+    color: white;
+    font-weight: 700;
+    border: #7fad39 solid 1px;
+    font-size: 14px;
+    font-family: "Cairo", sans-serif
 }
 
 .interactiveSocialMediabutton{
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     color: #252525;
     background-color: #fff;
     transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#interactiveSocialMediabuttonHolder {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
 }
 
 .interactiveSocialMediabutton:hover{
@@ -505,6 +549,10 @@ footer {
 #footerLineDiv{
     height: 0.2vh;
     background-color:#e2e2e2;
+}
+
+.footerSmallTitle {
+    font-weight: 700;
 }
 
 #footerCredit img {
