@@ -414,12 +414,27 @@ header {
     transition: 0.5s;
 }
 
+.linkTitle {
+    font-weight: 700;
+    font-size: 45px;
+    margin: 0;
+}
+
+.fa-minus{
+    margin-right: 15px;
+}
+
+.linkPath {
+    position: absolute;
+    margin-top: 8vh;
+}
+
 /* FOOTER SECTION */
 
 footer {
     grid-column: 2;
     width: 100%;
-    height: 45vh;
+    height: 55.5vh;
     background-color: #F3F6FA;
     grid-template-columns: 1fr 3fr 1fr;
     display: grid;
@@ -430,32 +445,29 @@ footer {
 #footerHolder {
     grid-column: 2;
     display: grid;
-    grid-template-areas: 'contact usefulLinks newsletter'
+    grid-template-areas: 'none none none'
+    'contact usefulLinks newsletter'
     'credit credit credit';
     grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: 4fr 0.8fr;
-    margin-top: 5.5vh;
-    
+    grid-template-rows: 0.5fr 2fr 0.7fr;
 }
 
 
 #footerContact {
     grid-area: contact;
+    grid-row: 2;
 }
 
 #footerUsefulLinks{
     grid-area: usefulLinks;
-    
-}
-
-#footerUsefulLinks{
+    grid-row: 2;
     list-style-type: none;
     padding-left: 0;
 }
 
 #footerUsefulLinks ul{
     width: 100%;
-    height: 27.5vh;
+    height: 25.5vh;
     display: flex;
     flex-flow: column wrap;  
     padding-left: 0;
@@ -473,6 +485,7 @@ footer {
 #footerNewsletter{
     grid-area: newsletter;
     display: grid;
+    grid-row: 2;
     grid-template-rows: 1fr 2fr 2.5fr 4fr
 }
 
@@ -509,8 +522,8 @@ footer {
 
 .interactiveSocialMediabutton{
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     color: #252525;
     background-color: #fff;
     transition: 0.3s;
@@ -534,6 +547,7 @@ footer {
 #footerCredit{
     grid-area: credit;
     display: flex;
+    grid-row: 3;
     justify-content: center;
     color:#6f6f6f;
     flex-direction: column;
@@ -544,6 +558,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     margin-top: 1.5vh;
+    background-color: #F3F6FA;
 }
 
 #footerLineDiv{
@@ -850,3 +865,190 @@ justify-content: space-between;
     font-size: 20px;
 }
 
+section {
+    width: 100%;
+    background-image: url(imgs/breadcrumb.jpg.webp);
+    height: 17vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-size: 110%;
+    background-position-x: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* SHOP SECTION*/
+
+#shopDivider {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#shopOptions {
+    color: #252525;
+    padding-left: 0;
+    padding: 5px;
+    list-style-type: none;
+    
+}
+
+#shopOptions li {
+    margin-bottom: 1vh;
+}
+
+.shopTitle {
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+
+#saleoff {
+    font-size: 40px;
+    margin-bottom: 0vh;
+}
+
+#saleoffLine {
+    width: 140px;
+}
+
+#shopDepartments {
+    font-size: 24px;
+}
+
+#latestProductsDisplayFix {
+    width: 90%;
+    grid-template-rows: 0.5fr repeat(3, 1fr);
+}
+
+.priceRangeSize {
+    width: 100%;
+    margin-bottom: 3vh;
+
+}
+
+form .priceRangeSize {
+    margin-bottom: 0vh;
+}
+
+#fakePriceRange {
+    color: #007bff;
+}
+
+#shopDivider .fa-minus{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#shopColorHolder {
+    width: 70%;
+    height: 13vh;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+#shopColorHolder div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5vh;
+}
+
+.colorCircle{
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    margin-right: 20px;
+}
+
+#circleWhite {
+    background-color: white;
+    border: #252525 solid 2px;
+    box-sizing: border-box;
+
+}
+#circleRed {
+    background: #D62D2D;
+
+}
+#circleBlue {
+    background: #249BC8;
+
+}
+#circleGray {
+    background: #E9A625;
+
+}
+#circleBlack {
+    background: #252525;
+
+}
+#circleGreen {
+    background: #3CC032;
+}
+
+#sizeIndicatorHolder {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1vh;
+    column-gap: 17px;
+    margin-bottom: 3vh;
+    
+}
+
+.sizeIndicatorBox {
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    width: 50px;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f5f5f5;
+}
+
+#indicatorBoxExtra {
+    width: 65px;
+}
+
+#saleBoxHolder {
+    width: 850px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:row nowrap;
+    column-gap: 30px;
+    margin-bottom: 10vh;
+    
+}
+.discountStamp {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    color: white;
+    background-color: #dd2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+}
+
+.discountedInfo {
+    top: 280px;
+    position: absolute;
+}
