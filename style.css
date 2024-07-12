@@ -15,6 +15,9 @@ main {
     grid-column: 2;
 }
 
+#newsletterInput, #searchInput, #blogSearch {
+    outline: none;
+}
 
 /* HEADER SECTION*/
 
@@ -230,6 +233,7 @@ header {
     padding: 0;
     height: 100%;
     background-color:transparent;
+    color: #b2b2b2;
 }
 
 .searchButton {
@@ -657,7 +661,6 @@ footer {
     width: 260px;
     height: 260px;
     display: flex;
-    align-self: center;
     justify-content: center;
     position: relative;
 }
@@ -743,7 +746,7 @@ footer {
     margin-bottom: 8vh;
 }
 
-#featuredGrid div {
+#featuredGrid div, #shopResultsGrid div {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -882,13 +885,13 @@ section {
     flex-flow: column;
 }
 
-/* SHOP SECTION*/
-
 #shopDivider {
     margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+
+/* SHOP SECTION*/
 
 #shopOptions {
     color: #252525;
@@ -916,7 +919,7 @@ section {
     width: 140px;
 }
 
-#shopDepartments {
+#shopDepartments, #blogSearchBy {
     font-size: 24px;
 }
 
@@ -1021,9 +1024,27 @@ form .priceRangeSize {
     width: 65px;
 }
 
+.indicatorBoxSml {
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    width: 38px;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f5f5f5;
+}
+
+#indicatorBoxXl {
+    width: 70px;
+}
+
 #saleBoxHolder {
     width: 850px;
-    height: 500px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -1051,4 +1072,336 @@ form .priceRangeSize {
 .discountedInfo {
     top: 280px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.discountedInfo .money {
+    padding-right: 20px;
+
+}
+
+.grayInfo, .crossedMoney {
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.discountedTitle {
+    font-size: 18px;
+}
+
+.crossedMoney {
+    text-decoration: line-through;
+}
+
+#shopResultsHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shopResultsHeader {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: #b2b2b2;
+}
+
+#shopResultsHeader b {
+    color: #000;
+    
+}
+
+#shopIcons {
+    margin-left: 20px;
+}
+
+#shopIcons * {
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#shopIcons *:hover {
+    color: #7fad39;
+    transition: 0.2s;
+}
+
+#shopProductFound b {
+    margin: 6px;
+}
+
+#shopSortBy span {
+    margin-left: 12px;
+}
+
+#shopSortBy span img {
+    margin-left: 6px;
+}
+
+#shopResultsGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 8vh;
+}
+
+.pageNavButtons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10vh;
+}
+
+.pageNavButtons div {
+    width: 30px;
+    height: 30px;
+    border: solid #b2b2b2 1px;
+    color: #b2b2b2;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pageNavButtons div:hover {
+    color: #fff;
+    border: solid #7fad39 1px;
+    background-color: #7fad39;
+    transition: 0.2s;
+}
+
+
+/* BLOG SECTION*/
+
+#blogDivider {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#blogSearch {
+    border-radius: 20px;
+    border: solid  #b2b2b2 1px;
+    height: 5vh;
+    font-size: 16px;
+    width: 90%;
+    font-family: "Cairo", sans-serif;
+    padding-left: 12px;
+    color: #b2b2b2;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+#blogDivider div form {
+    display: flex;
+}
+
+#blogDivider div span {
+
+}
+
+.fa-magnifying-glass {
+    color: #b2b2b2;
+    top: 6.8vh;
+    left: -30px;
+    position: relative;
+}
+
+#blogOptions {
+    color: #666666;
+    padding-left: 0;
+    padding: 5px;
+    list-style-type: none;
+    
+}
+
+#blogOptions li {
+    margin-bottom: 1.5vh;
+}
+
+.blogRecentNews {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: 'newsImage newsTitle'
+      'newsImage newsDate'; 
+      width: 100%;
+      height: 7vh; 
+      margin-top: 4vh;
+}
+
+.blogRecentNews div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      word-wrap: break-word;
+}
+
+.newsImage {
+      grid-area: newsImage;
+      width: 70px;
+      height: 70px;
+
+}
+
+.newsImage img {
+     object-fit: contain;
+     width: 100%;
+}
+
+.newsTitle {
+      grid-area: newsTitle;
+      font-size: 16px;
+      color: #333333;
+      font-weight: 700;
+      width: 70%;
+      line-height: 2vh;
+}
+
+.newsDate {
+      grid-area: newsDate;
+      font-size: 12px;
+      color: #999999;
+
+}
+
+#blogSearchBy {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+#searchByIndicatorHolder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    column-gap: 17px;
+    margin-bottom: 3vh;
+} 
+
+#blogHolder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    row-gap: 6vh;
+    column-gap: 30px;
+    margin-bottom: 8vh;
+
+}
+
+#blogHolder .blogEntry {
+    width: inherit;
+
+}
+
+.readMoreButton {
+   width: 40%;
+   height: 6vh;
+   color: #1c1c1c;
+   border: 1px solid #b2b2b2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   padding-left: 6px;
+   padding-right: 6px;
+   border-radius: 24px;
+   vertical-align: center;
+   letter-spacing: 1px;
+   margin-top: 2vh;
+}
+
+.readMoreButton span {
+   margin-right: 12px;
+}
+
+#blogDivider div .pageNavButtons {
+   margin-top: 6vh
+}
+
+/* CONTACT SECTION */
+
+#mapsHolder {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 60vh;
+}
+
+#contactBigInfoHolder {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   column-gap: 50px;
+   height: 35vh;
+}
+
+#contactBigInfoHolder div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.contactBigInfoIcon {
+   color: #7fad39;
+   margin-top: 3vh;
+}
+
+.contactBigInfoTitle {
+   font-size: 24px;
+   font-weight: 700;
+   color: #1c1c1c;
+   margin-top: 4vh;
+}
+
+.contactBigInfoData {
+   font-size: 16px;
+   color: #666666;
+   margin-top: -1vh;
+}
+
+#mapSpeechBubble {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   height: 14vh;
+}
+
+#mapsHolder {
+   position:relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#mapSpeechBubbleHolder {
+   width: 20%;
+   position:absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#mapSpeechBubble .fa-caret-down {
+   color: #fff;
+   margin-top:0.5vh;
+}
+
+#realLocationIcon {
+   color: #7fad39;
+   margin-top: 3vh;
 }
