@@ -785,7 +785,7 @@ footer {
     transition: 0.3s;
 }
 #featuredGrid div:hover .featuredButtonsHoverable {
-    top: 240px;
+    top: 225px;
     transition: 0.3s;
 }
 
