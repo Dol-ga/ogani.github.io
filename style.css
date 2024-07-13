@@ -761,6 +761,7 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    contain: content;
 }
 
 .featuredImage {
@@ -780,7 +781,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     top: 280px;
-    gap: 5px
+    gap: 5px;
     transition: 0.3s;
 }
 #featuredGrid div:hover .featuredButtonsHoverable {
