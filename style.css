@@ -771,20 +771,16 @@ footer {
     width: 100%;
 }
 
-.featuredButtonsHoverable {
+#featuredGrid div.featuredButtonsHoverable {
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.featuredImage .featuredButtonsHoverable {
-    top: 100;
+    top: 100px;
     transition: 0.5s;
 }
-
-.featuredImage:hover .featuredButtonsHoverable {
-    top: 10;
+#featuredGrid div:hover .featuredButtonsHoverable {
+    top: 10px;
     transition: 0.5s;
 }
 
