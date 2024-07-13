@@ -775,7 +775,7 @@ footer {
     width: 100%;
 }
 
-#featuredGrid div .featuredButtonsHoverable, #shopResultsGrid div .featuredButtonsHoverable,{
+#featuredGrid div .featuredButtonsHoverable, #shopResultsGrid div .featuredButtonsHoverable{
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -784,7 +784,7 @@ footer {
     gap: 15px;
     transition: 0.3s;
 }
-#featuredGrid div:hover .featuredButtonsHoverable, #shopResultsGrid div:hover .featuredButtonsHoverable, {
+#featuredGrid div:hover .featuredButtonsHoverable, #shopResultsGrid div:hover .featuredButtonsHoverable{
     top: 225px;
     transition: 0.3s;
 }
