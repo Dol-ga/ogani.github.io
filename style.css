@@ -771,7 +771,7 @@ footer {
     width: 100%;
 }
 
-#featuredGrid div.featuredButtonsHoverable {
+#featuredGrid div .featuredButtonsHoverable {
     position: absolute;
     display: flex;
     flex-direction: row;
