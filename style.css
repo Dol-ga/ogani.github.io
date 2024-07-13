@@ -551,6 +551,13 @@ footer {
     transition: 0.3s;
 }
 
+.featuredButtonsHoverable .interactiveSocialMediabutton:hover{
+    color: #fff;
+    background-color: #7fad39;
+    transition: 0.3s;
+    transform: rotate(360deg);
+}
+
 #footerCredit{
     grid-area: credit;
     display: flex;
@@ -760,9 +767,27 @@ footer {
     width: 100%;
 }
 
-.featuredImage * {
+.featuredImage img {
     width: 100%;
 }
+
+.featuredButtonsHoverable {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.featuredImage .featuredButtonsHoverable {
+    top: 100;
+    transition: 0.5s;
+}
+
+.featuredImage:hover .featuredButtonsHoverable {
+    top: 10;
+    transition: 0.5s;
+}
+
 
 #banners {
     display: flex;
