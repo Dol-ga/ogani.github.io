@@ -781,7 +781,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     top: 280px;
-    gap: 5px;
+    gap: 15px;
     transition: 0.3s;
 }
 #featuredGrid div:hover .featuredButtonsHoverable {
